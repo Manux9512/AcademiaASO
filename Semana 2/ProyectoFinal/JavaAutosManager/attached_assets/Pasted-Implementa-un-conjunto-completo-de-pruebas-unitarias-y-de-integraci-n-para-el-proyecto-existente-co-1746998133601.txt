@@ -1,0 +1,70 @@
+Implementa un conjunto completo de pruebas unitarias y de integración para el proyecto existente, con las siguientes especificaciones:
+Requisitos generales:
+
+NO modificar el código fuente original bajo ninguna circunstancia
+Alcanzar una cobertura de código mínima del 90% en todas las capas
+Utilizar JUnit 5 como framework principal de pruebas
+Implementar Mockito para simulación de dependencias
+
+Pruebas unitarias:
+
+Para la capa Controller:
+
+Pruebas para cada endpoint REST implementado
+Verificación de códigos de respuesta HTTP
+Validación de formatos de respuesta JSON
+Pruebas de manejo de excepciones y casos límite
+Utilizar MockMvc para simular peticiones HTTP
+
+
+Para la capa Service:
+
+Pruebas exhaustivas de toda la lógica de negocio
+Mockear dependencias de Repository
+Validar transformaciones entre entidades y DTOs
+Pruebas de casos de error y excepciones personalizadas
+Verificar comportamiento con datos válidos e inválidos
+
+
+Para la capa Repository:
+
+Pruebas de operaciones CRUD básicas
+Validación de queries personalizadas
+Pruebas de relaciones entre Empresa y Cliente
+Verificación de restricciones de base de datos
+
+
+
+Pruebas de integración:
+
+Configuración específica:
+
+Utilizar @SpringBootTest para tests de integración
+Configurar H2 en memoria específica para pruebas
+Implementar TestRestTemplate o WebTestClient para pruebas end-to-end
+
+
+Escenarios a cubrir:
+
+Flujos completos desde Controller hasta Repository
+Pruebas de integración entre Empresa y Cliente
+Validación de persistencia en base de datos
+Pruebas de rendimiento básicas para operaciones críticas
+
+
+
+Configuración adicional:
+
+Implementar @TestConfiguration cuando sea necesario
+Utilizar datasets específicos para pruebas (@Sql scripts)
+Configurar informes de cobertura con JaCoCo
+Separar claramente fixtures y data builders para pruebas
+Implementar @BeforeEach y @AfterEach apropiadamente
+
+Entregables:
+
+Estructura de carpetas de pruebas que refleje la estructura del código
+Informe detallado de cobertura generado por JaCoCo
+Documentación de las pruebas implementadas
+
+Nota: Enfocarse en pruebas significativas que validen comportamiento real en lugar de simplemente aumentar la cobertura."

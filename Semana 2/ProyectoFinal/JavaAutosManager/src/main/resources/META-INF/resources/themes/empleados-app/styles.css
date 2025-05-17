@@ -1,0 +1,108 @@
+/* Import Lumo theme */
+@import url('./lumo-css-framework/all-classes.css');
+
+html {
+    --lumo-primary-color: hsl(214, 90%, 52%);
+    --lumo-primary-color-50pct: hsla(214, 90%, 52%, 0.5);
+    --lumo-primary-color-10pct: hsla(214, 90%, 52%, 0.1);
+    
+    --lumo-error-color: hsl(0, 81%, 50%);
+    --lumo-error-color-50pct: hsla(0, 81%, 50%, 0.5);
+    --lumo-error-color-10pct: hsla(0, 81%, 50%, 0.1);
+    
+    --lumo-success-color: hsl(145, 80%, 42%);
+    --lumo-success-color-50pct: hsla(145, 80%, 42%, 0.5);
+    --lumo-success-color-10pct: hsla(145, 80%, 42%, 0.1);
+    
+    --lumo-body-text-color: hsla(214, 25%, 25%, 0.9);
+    
+    /* Tamaños y espaciados */
+    --lumo-size-xl: 3rem;
+    --lumo-size-l: 2.5rem;
+    --lumo-size-m: 2rem;
+    --lumo-size-s: 1.75rem;
+    --lumo-size-xs: 1.5rem;
+    
+    /* Bordes redondeados */
+    --lumo-border-radius: 0.5em;
+}
+
+/* Estilos del Dashboard */
+.dashboard-view {
+    padding: var(--lumo-space-m);
+}
+
+.stat-card {
+    background-color: var(--lumo-base-color);
+    border-radius: var(--lumo-border-radius);
+    box-shadow: var(--lumo-box-shadow-xs);
+    padding: var(--lumo-space-m);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--lumo-box-shadow-s);
+}
+
+.stat-value {
+    color: var(--lumo-primary-color);
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-title {
+    color: var(--lumo-secondary-text-color);
+    font-size: var(--lumo-font-size-s);
+}
+
+/* Estilos para la vista de empleados */
+.empleados-view {
+    padding: var(--lumo-space-m);
+}
+
+.empleados-view .toolbar {
+    margin-bottom: var(--lumo-space-m);
+}
+
+.empleado-form {
+    background-color: var(--lumo-base-color);
+    padding: var(--lumo-space-m);
+    border-radius: var(--lumo-border-radius);
+    box-shadow: var(--lumo-box-shadow-xs);
+}
+
+.empleado-form h3 {
+    margin-top: 0;
+    color: var(--lumo-primary-color);
+}
+
+/* Estilos para la tarjeta de departamento */
+.dept-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dept-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--lumo-box-shadow-s);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .statistics-layout {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        margin-bottom: var(--lumo-space-m);
+        width: 100%;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    
+    .empleado-form {
+        width: 100%;
+    }
+}

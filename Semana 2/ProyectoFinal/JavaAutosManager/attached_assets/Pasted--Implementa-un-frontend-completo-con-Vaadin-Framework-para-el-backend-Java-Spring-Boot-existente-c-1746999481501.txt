@@ -1,0 +1,58 @@
+
+"Implementa un frontend completo con Vaadin Framework para el backend Java Spring Boot existente, con las siguientes especificaciones:
+
+Requisitos generales:
+- NO modificar NINGUNA parte del código backend existente que ya implementa el entity Empleado
+- Utilizar Vaadin Flow en su versión más reciente compatible con Spring Boot 3.x y Java 17
+- Integrar Vaadin como un módulo adicional en el proyecto Maven existente
+- Configurar la integración de manera que coexista con los endpoints REST ya implementados
+
+Estructura y componentes:
+1. Página principal (Dashboard):
+   * Panel de control con estadísticas de empleados (total, promedio salarial, distribución por departamento)
+   * Gráfico circular o de barras mostrando empleados por departamento
+   * Accesos rápidos a la gestión de empleados
+
+2. Gestión de Empleados:
+   * Grid paginado con todos los empleados
+   * Columnas para id, nombre, apellido, email, departamento, fechaContratacion y salario
+   * Capacidad de ordenar y filtrar por cualquier columna
+   * Formato adecuado para fechas y valores monetarios
+   * Implementar operaciones CRUD completas:
+     - Botón para añadir nuevo empleado
+     - Edición inline o mediante formulario modal
+     - Eliminación con confirmación
+
+3. Formulario de Empleado:
+   * Campos validados para todos los atributos del empleado
+   * Selector de fecha para fechaContratacion
+   * ComboBox o select para departamentos comunes
+   * Validaciones en tiempo real (email válido, campos requeridos, etc.)
+   * Botones para guardar o cancelar operaciones
+
+Requisitos técnicos:
+- Implementar navegación con Vaadin Router o Spring Navigation
+- Utilizar componentes estándar de Vaadin: Grid, Form, Dialog, DatePicker
+- Crear diseño responsivo compatible con móviles y escritorio
+- Implementar tema personalizado con Lumo (soporte para modo claro y oscuro)
+- Configurar notificaciones para operaciones exitosas o errores
+
+Integración con backend:
+- Consumir los endpoints REST existentes del servicio de Empleado
+- No duplicar lógica de negocio en el frontend
+- Utilizar Vaadin Connect o servicios Spring para la comunicación
+
+Experiencia de usuario:
+- Implementar búsqueda global de empleados
+- Añadir filtros rápidos (ej: por departamento)
+- Indicadores de carga durante operaciones
+- Mensajes de confirmación para acciones destructivas
+- Validaciones del lado del cliente
+
+Documentación:
+- Actualizar README con instrucciones de ejecución
+- Incluir capturas de pantalla de la interfaz
+- Documentar estructura de componentes y flujo de navegación
+
+Nota importante: El desarrollo frontend debe integrarse con el backend existente sin requerir modificaciones en el código Java que maneja la entidad Empleado."
+
