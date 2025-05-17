@@ -1,16 +1,16 @@
-# Sistema de Gestión de Empleados
+# Sistema de Gestión de Automoviles
 
-Un sistema para la gestión de empleados desarrollado con Java Spring Boot y Thymeleaf para la interfaz de usuario web.
+Un sistema para la gestión de automoviles desarrollado con Java Spring Boot y Thymeleaf para la interfaz de usuario web.
 
 ## Descripción
 
-Esta aplicación proporciona una interfaz web para gestionar información de empleados, con un backend RESTful desarrollado en Spring Boot y una interfaz de usuario construida con Thymeleaf.
+Esta aplicación proporciona una interfaz web para gestionar información de automoviles, con un backend RESTful desarrollado en Spring Boot y una interfaz de usuario construida con Thymeleaf.
 
 ## Características
 
 ### Backend (Spring Boot)
 
-- API REST completa para la gestión de empleados
+- API REST completa para la gestión de automoviles
 - Arquitectura en capas (Controller, Service, Repository)
 - Validación de datos y manejo de excepciones
 - Base de datos H2 en memoria (fácilmente configurable para bases de datos persistentes)
@@ -19,8 +19,8 @@ Esta aplicación proporciona una interfaz web para gestionar información de emp
 
 ### Frontend (Thymeleaf)
 
-- Interfaz web para la visualización de empleados
-- Gestión completa CRUD (Crear, Leer, Actualizar, Borrar) de empleados a través de formularios web
+- Interfaz web para la visualización de automoviles
+- Gestión completa CRUD (Crear, Leer, Actualizar, Borrar) de automoviles a través de formularios web
 - Interfaz de usuario renderizada en el servidor con plantillas Thymeleaf
 
 ## Capturas de Pantalla
@@ -28,8 +28,8 @@ Esta aplicación proporciona una interfaz web para gestionar información de emp
 ### Dashboard
 ![Dashboard](screenshot-dashboard.png)
 
-### Gestión de Empleados
-![Empleados](screenshot-empleados.png)
+### Gestión de automoviles
+![automoviles](screenshot-automoviles.png)
 
 *(Nota: Las capturas de pantalla podrían necesitar actualización si la interfaz de usuario ha cambiado significativamente).*
 
@@ -42,8 +42,8 @@ Esta aplicación proporciona una interfaz web para gestionar información de emp
 
 1. Clonar el repositorio:
    ```bash
-   git clone [https://github.com/tuusuario/empleados-app.git](https://github.com/tuusuario/empleados-app.git)
-   cd empleados-app
+   git clone [https://github.com/tuusuario/automoviles-app.git](https://github.com/tuusuario/automoviles-app.git)
+   cd automoviles-app
 
 2. Compilar y ejecutar con Maven:
    ```bash
@@ -54,7 +54,7 @@ Esta aplicación proporciona una interfaz web para gestionar información de emp
 3. Acceder a la aplicación:
    - **Frontend Thymeleaf**: http://localhost:8000/
    - **Swagger API Docs**: http://localhost:8000/swagger-ui.html
-   - **API REST**: http://localhost:8000/api/empleados
+   - **API REST**: http://localhost:8000/api/automoviles
 
 ## Estructura del Proyecto
 
@@ -63,7 +63,7 @@ src/
 ├── main/
 │   ├── java/
 │   │   └── com/
-│   │       └── empleados/
+│   │       └── automoviles/
 │   │           └── api/
 │   │               ├── config/                  # Configuración Spring y SpringDoc/OpenAPI
 │   │               ├── controller/              # Controladores REST
